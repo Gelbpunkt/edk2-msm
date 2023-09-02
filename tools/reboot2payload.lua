@@ -1,5 +1,5 @@
 print("Hello lua!")
-address=0x17FE00000
+address=0x19D800000
 magic=0x5241
 iolib=uefi.GetLib("IoLib")
 for i=1,128 do

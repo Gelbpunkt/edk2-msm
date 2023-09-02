@@ -36,9 +36,9 @@ _KernelSize:
 	.ascii "EDK2-MSM"
 
 _Start:
-	/* Here it reads 0x17FE00000 to get 
+	/* Here it reads 0x09D800000 to get 
 	message from simple-init on last reboot */
-	mov		x4, #0x7FE00000
+	mov		x4, #0x09D800000
 	movk	x4, #0x1, lsl #32
 	mov		x6, #128
 	mov		w7, #0x5241
@@ -75,7 +75,7 @@ _CopyLoop:
 	ret
 
 _ClearFlags:
-	mov		x4, #0x7FE00000
+	mov		x4, #0x09D800000
 	movk	x4, #0x1, lsl #32
 	mov		x6, #32
 

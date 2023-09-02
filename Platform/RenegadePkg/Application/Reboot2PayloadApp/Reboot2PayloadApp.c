@@ -17,7 +17,7 @@ Reboot2PayloadAppEntryPoint(
     IN EFI_HANDLE ImageHandle, IN EFI_SYSTEM_TABLE *SystemTable)
 {
   
-  UINT16* ptr = (UINT16*)0x17FE00000;
+  UINT16* ptr = (UINT16*)0x19D800000;
 
   for(int i = 0; i < 128; i++) {
     *(ptr + i) = LINUX_BOOT_ACQUIRED_MAGIC;
